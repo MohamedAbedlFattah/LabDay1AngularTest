@@ -1,0 +1,20 @@
+<table class="table table-hover table-striped " *ngIf="Employees.length">
+  <thead >
+    <tr class="thead-dark">
+      <th>ID</th>
+      <th>Name</th>
+      <th >Address</th>
+      <th >Salary</th>
+      <th>Department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of Employees">
+      <td>{{emp.ID}}</td>
+      <td>{{emp.Name}}</td>
+      <td>{{emp.Address}}</td>
+      <td>{{emp.Salary}}</td>
+      <td>{{emp.Department}}</td>
+    </tr>
+  </tbody>
+</table>
